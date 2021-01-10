@@ -1,0 +1,36 @@
+﻿
+
+<template>
+    <form role="form" submit.delegate="submit()">
+        <div class="first-name">
+            <label for="name">Name</label>
+            <input type="text" value.bind="name" placeholder="Name" required>
+        </div>
+        <div class="first-name">
+            <label for="familyName">Family Name</label>
+            <input type="text" value.bind="familyName" placeholder="Family Name">
+        </div>
+        <div class="first-name">
+            <label for="address">Address</label>
+            <input type="text" value.bind="address" placeholder="Address">
+        </div>
+        <div class="first-name">
+            <label for="CountryOfOrigin ">Country of Origin </label>
+            <input type="text" value.bind="CountryOfOrigin " placeholder="Country of Origin" required>
+        </div>
+
+        <div class="first-name">
+            <label for="email">Email</label>
+            <input type="text" value.bind="email" placeholder="Email" required>
+        </div>
+
+        <div class="first-name">
+            <label for="age">Age </label>
+            <input type="number" value.bind="age" placeholder="Age">
+        </div>
+        <label for="hired">Hired</label>
+        <input type="checkbox" id="hired" checked.bind="isHired"><br />
+
+        <button type="submit" disabled>Submit</button>
+    </form>
+</template>
